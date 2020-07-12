@@ -1,5 +1,6 @@
 @import './baseColors';
 @import '../components/navbar/navbar';
+@import '../styles/components/landingPage';
 
 * {
   margin: 0;
@@ -19,4 +20,8 @@ body {
 
 b {
   color: $primaryBold;
+}
+
+a {
+  color: white;
 }

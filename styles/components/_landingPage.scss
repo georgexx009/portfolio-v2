@@ -1,0 +1,13 @@
+@import '../classes';
+
+#landing-page {
+  height: 92vh;
+  .scroll-down-pointer {
+    @extend %flex-column-center;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    font-size: 1.2em;
+  }
+}

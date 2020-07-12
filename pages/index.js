@@ -20,16 +20,24 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <p className={s.whoAmI}>
-          Hello There!
-          <br /> <br />
-          I’m <b>Emmanuel</b>. I’m a mechatronic engineer by title and{' '}
-          <b>Full Stack Developer</b> by working career.
-        </p>
-        <img
-          className={s.logoImage}
-          src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1593966841/georgeLogo_dtcgvw.png"
-        />
+        <div id="landing-page">
+          <p className={s.whoAmI}>
+            Hello There!
+            <br /> <br />
+            I’m <b>Emmanuel</b>. I’m a mechatronic engineer by title and{' '}
+            <b>Full Stack Developer</b> by working career.
+          </p>
+          <img
+            className={s.logoImage}
+            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1593966841/georgeLogo_dtcgvw.png"
+          />
+          <div className="scroll-down-pointer">
+            <span>About me</span>
+            <a href="#about-me-section">
+              <i className="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   );
