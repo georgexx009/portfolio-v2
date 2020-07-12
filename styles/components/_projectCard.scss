@@ -1,0 +1,29 @@
+.project-card {
+  width: 90%;
+  max-width: 500px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //border: 1px solid red;
+
+  .project-image {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .project-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px auto;
+  }
+
+  .project-summary {
+    margin: auto 15px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 20px;
+  }
+}

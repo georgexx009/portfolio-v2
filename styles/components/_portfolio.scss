@@ -1,0 +1,25 @@
+.portfolio-section {
+  .break-line {
+    @extend %break-line;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .portfolio-section .card-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .break-line {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .portfolio-section .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
