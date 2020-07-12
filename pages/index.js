@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import AboutMe from '../components/aboutMe';
 import MySkills from '../components/mySkills';
 import AboutThisPage from '../components/aboutThisPage';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
         <MySkills />
         <AboutThisPage />
       </main>
+      <Footer />
     </div>
   );
 }
