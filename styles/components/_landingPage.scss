@@ -8,6 +8,11 @@
     bottom: 25px;
     left: 0;
     right: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #landing-page .scroll-down-pointer {
     font-size: 1.2em;
   }
 }

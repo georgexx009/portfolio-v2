@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import s from '../styles/components/landingPage.module.scss';
 import Navbar from '../components/navbar';
+import AboutMe from '../components/aboutMe';
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <AboutMe />
       </main>
     </div>
   );
