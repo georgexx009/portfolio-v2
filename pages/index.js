@@ -2,6 +2,7 @@ import Head from 'next/head';
 import s from '../styles/components/landingPage.module.scss';
 import Navbar from '../components/navbar';
 import AboutMe from '../components/aboutMe';
+import MySkills from '../components/mySkills';
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
         </div>
         <AboutMe />
+        <MySkills />
       </main>
     </div>
   );

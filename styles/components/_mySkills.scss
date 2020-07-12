@@ -1,0 +1,46 @@
+.my-skills-section {
+  @extend %flex-column-center;
+  //padding-top: 40px;
+
+  .skills-container {
+    @extend %flex-column-center;
+    margin-top: 20px;
+
+    .skill-card {
+      @extend %text-center-mobile;
+
+      .break-line {
+        width: 40%;
+        margin: 10px auto;
+      }
+      margin-bottom: 60px;
+    }
+
+    .notes-part {
+      .break-line {
+        width: 100%;
+      }
+      p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .my-skills-section {
+    height: 100vh;
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+
+      .skill-card {
+        height: 165px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
