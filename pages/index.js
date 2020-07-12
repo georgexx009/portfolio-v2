@@ -3,6 +3,7 @@ import s from '../styles/components/landingPage.module.scss';
 import Navbar from '../components/navbar';
 import AboutMe from '../components/aboutMe';
 import MySkills from '../components/mySkills';
+import AboutThisPage from '../components/aboutThisPage';
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
         </div>
         <AboutMe />
         <MySkills />
+        <AboutThisPage />
       </main>
     </div>
   );

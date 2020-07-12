@@ -1,6 +1,5 @@
 .my-skills-section {
   @extend %flex-column-center;
-  //padding-top: 40px;
 
   .skills-container {
     @extend %flex-column-center;
@@ -30,7 +29,7 @@
 
 @media only screen and (min-width: 1080px) {
   .my-skills-section {
-    height: 100vh;
+    //height: 100vh;
     .skills-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
