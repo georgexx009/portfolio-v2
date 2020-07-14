@@ -11,6 +11,8 @@
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-player": "^2.5.0"
+    "react-player": "^2.5.0",
+    "sass": "^1.26.10",
+    "scss": "^0.2.4"
   }
 }
