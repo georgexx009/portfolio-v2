@@ -17,10 +17,10 @@ export default function Navbar() {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="YosaeTaedo">
+        <Link href="/YosaeTaedo">
           <a>Yosae Taedo</a>
         </Link>
-        <Link href="Portfolio">
+        <Link href="/Portfolio">
           <a>Portfolio</a>
         </Link>
       </div>
