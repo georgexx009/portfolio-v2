@@ -20,7 +20,7 @@ export default function Navbar() {
         <Link href="/YosaeTaedo">
           <a>Yosae Taedo</a>
         </Link>
-        <Link href="/Portfolio">
+        <Link href="/projects">
           <a>Portfolio</a>
         </Link>
       </div>
