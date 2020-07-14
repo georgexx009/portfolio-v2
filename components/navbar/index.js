@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [widthSideBar, setWidthSideBar] = useState('0px');
@@ -13,7 +14,15 @@ export default function Navbar() {
         style={{ width: widthSideBar }}
         onClick={() => setWidthSideBar('0px')}
       >
-        <p>Element 1</p>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="YosaeTaedo">
+          <a>Yosae Taedo</a>
+        </Link>
+        <Link href="Portfolio">
+          <a>Portfolio</a>
+        </Link>
       </div>
     </div>
   );

@@ -36,7 +36,13 @@ b {
 }
 
 a {
+  text-decoration: none;
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding-bottom: 4px;
+  &:hover {
+    border-bottom: 1px solid white;
+  }
 }
 
 .break-line {
