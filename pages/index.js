@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import s from '../styles/components/landingPage.module.scss';
+import Link from 'next/link';
 import Navbar from '../components/navbar';
 import AboutMe from '../components/aboutMe';
 import MySkills from '../components/mySkills';
@@ -25,21 +25,29 @@ export default function Home() {
       <Navbar />
       <main>
         <div id="landing-page">
-          <p className={s.whoAmI}>
+          <p className="who-am-i">
             Hello There!
             <br /> <br />
             I’m <b>Emmanuel</b>. I’m a mechatronic engineer by title and{' '}
             <b>Full Stack Developer</b> by working career.
           </p>
-          <img
-            className={s.logoImage}
-            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595284773/logo_black_ttawt2.png"
-          />
-          <div className="scroll-down-pointer">
-            <span>About me</span>
-            <a href="#about-me-section">
-              <i className="fas fa-chevron-down"></i>
-            </a>
+          <div className="logo-image">
+            <img src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595284773/logo_black_ttawt2.png" />
+          </div>
+          <div className="links-section">
+            <div className="links-container">
+              <a href="#skills-section">My skills</a>
+              <a href="#about-me-section">About me</a>
+              <Link href="/projects">
+                <a
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Portfolio
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
         <AboutMe />

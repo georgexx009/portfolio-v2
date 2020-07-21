@@ -18,56 +18,31 @@ export default function AboutMe() {
         <hr className="break-line" />
         <div className="about-me-text">
           <p>
+            If I could describe my self in one word, would be <b>passionate</b>.
+            I love technology and I’m passionate about learning how things work
+            and how to create things to provide elegant solutions. I like to
+            read about programming languages, about new technologies coming up,
+            listening to other developers talk about their experiences. When I
+            solve a problem or create something, either through code or some
+            other means,{' '}
+            <b>
+              I found a feeling of happiness and satisfaction that only helps me
+              confirm why I love this so much.
+            </b>
+          </p>
+          <p>
             Time ago, my way of thinking was that I will sleep when I’m dead,
             trying to do everything, learning everything. I forgot why I
-            started, I forgot to have fun and enjoy what I’m doing. Until I got
-            burn. So I started to looking for a better way of manage my life. I
-            found
-            <b>Minimalism and Essentialism</b>, these two tough me how to leave
-            a meaningful life and focus on the important things. Currently,{' '}
-            <b>
-              I’m working on improve my habits and my time management. Focusing
-              in what really matters.
-            </b>{' '}
+            started, I forgot to have fun and enjoy what I was doing. Until I
+            got burn. So I started to look for a better way of managing my life.{' '}
+            <br />
+            <br />I found <b>Minimalism and Essentialism</b>, these two though
+            me how to live a meaningful life and focus on the important things.
+            Currently, I’m working on improving my habits and my time
+            management. Focusing on what really matters. I don't just apply
+            these principles to my life, I realized that if I also apply them to
+            my career, I could get better results.
           </p>
-          <p>
-            I don't just apply these principles to my life, I realized that if I
-            also apply it to my programmer career, I could get better results.{' '}
-          </p>
-          <p>
-            <b>Currently, I focus on learning three things.</b>
-            <ul>
-              <li>Learning one new technology for web development</li>
-              <li>Data Structures and Algorithms</li>
-              <li>Develop a personal project</li>
-            </ul>
-          </p>
-          <p>
-            I consider important to learn about Data Structures and Algorithms
-            for understanding <b>how programming languages work,</b> it gives
-            you a different perspective of situations. Having a project where I
-            could keep practicing what I’m learning make me go out of my comfort
-            zone and make me improve even more.
-          </p>
-        </div>
-        <div className="links-container">
-          <a href="#skills-section">My skills</a>
-          <a
-            onClick={() => {
-              history.push('/portfolio');
-              window.scrollTo(0, 0);
-            }}
-          >
-            Portfolio
-          </a>
-          <a
-            onClick={() => {
-              history.push('/MyNotes');
-              window.scrollTo(0, 0);
-            }}
-          >
-            Notes
-          </a>
         </div>
       </div>
     </div>

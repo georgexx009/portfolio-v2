@@ -2,17 +2,93 @@
 
 #landing-page {
   height: 92vh;
-  .scroll-down-pointer {
+
+  .who-am-i {
+    width: 80%;
+    margin-left: 5%;
+    max-width: 600px;
+    transition: all 1s linear;
+    position: absolute;
+    bottom: 20%;
+    font-size: 0.9em;
+  }
+
+  .logo-image {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    top: 5%;
+    transition: all 1s linear;
+    overflow: hidden;
+
+    img {
+      width: 400px;
+    }
+  }
+
+  .links-section {
     @extend %flex-column-center;
     position: absolute;
-    bottom: 25px;
+    bottom: 70px;
     left: 0;
     right: 0;
+    font-size: 0.8em;
+
+    .links-container {
+      a {
+        text-decoration: none;
+        margin-right: 35px;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0);
+        padding-bottom: 2px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  #landing-page {
+    .logo-image {
+      width: 400px;
+    }
+    .links-section {
+      font-size: 1em;
+    }
   }
 }
 
 @media only screen and (min-width: 900px) {
-  #landing-page .scroll-down-pointer {
-    font-size: 1.2em;
+  #landing-page {
+    .logo-image {
+      width: 500px;
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+
+    .who-am-i {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #landing-page {
+    .logo-image {
+      width: 600px;
+      right: 100px;
+    }
+
+    .who-am-i {
+      max-width: 800px;
+    }
   }
 }
