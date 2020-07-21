@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <img
             className={s.logoImage}
-            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1593966841/georgeLogo_dtcgvw.png"
+            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595284773/logo_black_ttawt2.png"
           />
           <div className="scroll-down-pointer">
             <span>About me</span>

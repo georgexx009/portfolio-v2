@@ -13,7 +13,7 @@ export default function AboutThisPage() {
         </p>
         <img
           className="page-structure-image"
-          src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1594586524/projects/webpage_structure_v2_ln4kx4.png"
+          src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595287139/projects/web_page_structure_ngo3tx.png"
         />
         <p>
           I have a portfolio made in React.js, but since the client side was

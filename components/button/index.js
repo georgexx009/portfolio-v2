@@ -10,7 +10,7 @@ const Button = ({
     onClick={handleClick}
     type={type}
     disabled={extras.disabled}
-    className={`${extras.disabled && 'disableBtn'}`}
+    className={lbl}
   >
     {lbl}
   </button>

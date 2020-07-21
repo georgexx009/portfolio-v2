@@ -15,11 +15,7 @@ const ProjectCard = ({ title, summary, urlImg, github, webPage }) => {
       <p className="project-summary">{summary}</p>
       <div className="footer">
         {github && (
-          <Button
-            style={githubBtnStyle}
-            handleClick={() => window.open(github)}
-            lbl="Github"
-          />
+          <Button handleClick={() => window.open(github)} lbl="Github" />
         )}
         {webPage && (
           <Button handleClick={() => window.open(webPage)} lbl="web page" />
