@@ -53,6 +53,12 @@ export default function Home() {
         <AboutMe />
         <MySkills />
         <AboutThisPage />
+        <div className="background-image-container">
+          <img
+            className="background-image"
+            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1593972690/logo_icon_tiluaj.png"
+          />
+        </div>
       </main>
       <Footer />
     </div>

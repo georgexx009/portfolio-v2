@@ -50,3 +50,22 @@ a {
 .title-section {
   @extend %title;
 }
+
+.background-image-container {
+  width: 600px;
+  position: absolute;
+  right: 0px;
+  bottom: -1000px;
+  overflow: hidden;
+
+  img.background-image {
+    opacity: 0.2;
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900) {
+  .background-image-container {
+    width: 500px;
+  }
+}
