@@ -1,6 +1,31 @@
 export const projectsData = [
   {
     urlImg:
+      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593791968/projects/1E7A535F-18A5-41BC-BC8D-61E386345AF6_kbeiiy.png',
+    title: 'Working at Yosae Taedo',
+    summary:
+      'Read about my experience developing a training system to perform multiple pre-established metric tests to measure and improve athletes skills through electronic devices and an application.',
+    webPage: 'https://portfolio-v2.vercel.app/YosaeTaedo',
+  },
+  {
+    urlImg:
+      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1595444104/projects/portfolio-v2_bi7tnn.png',
+    title: 'Portfolio on Next.js',
+    summary:
+      'This is the second version of my portfolio. A light mode version and faster at loading with the help of Next.js. Read about me and what I have done.',
+    github: 'https://github.com/georgexx009/portfolio-v2',
+    webPage: 'https://portfolio-v2.vercel.app ',
+  },
+  {
+    urlImg:
+      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1595449048/projects/habit-tracker_zzuo3f.png',
+    title: 'Habit Tracker - Coming soon',
+    summary:
+      'A progresive web application that will focus on help you build good habits, stop bad habits and stop procrastination. ',
+    github: 'https://github.com/georgexx009/habit-tracker',
+  },
+  {
+    urlImg:
       'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593625746/projects/crud_application_with_user_validation_rre8ek.png',
     title: 'CRUD Application with user validation',
     summary:
@@ -10,11 +35,12 @@ export const projectsData = [
   },
   {
     urlImg:
-      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593791968/projects/1E7A535F-18A5-41BC-BC8D-61E386345AF6_kbeiiy.png',
-    title: 'Working at Yosae Taedo',
+      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593625748/projects/portfolio_fzsfcf.png',
+    title: 'Portfolio on React and Webpack',
     summary:
-      'Read about my experience developing a training system to perform multiple pre-established metric tests to measure and improve athletes skills through electronic devices and an application.',
-    webPage: 'https://georgexx009.herokuapp.com/#/yosae',
+      'This is the first version of my portfolio. A Dark mode Single Page Website. Read about me and what I have done.',
+    github: 'https://github.com/georgexx009/emmanuel-portfolio',
+    webPage: 'https://georgexx009.herokuapp.com',
   },
   {
     urlImg:
@@ -27,7 +53,7 @@ export const projectsData = [
   {
     urlImg:
       'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593625745/projects/default_project_pfygxu.png',
-    title: 'Data Structures and Algorithms made in Python',
+    title: 'Data Structures and Algorithms in Python',
     summary:
       'These are the codes that I do while learning Data Structures and Algorithms',
     github: 'https://github.com/georgexx009/Data-Structures-python',
@@ -35,18 +61,9 @@ export const projectsData = [
   {
     urlImg:
       'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593625745/projects/default_project_pfygxu.png',
-    title: 'Rest Server',
+    title: 'Rest API - Node.js web server',
     summary:
-      'This is a REST server to practice how to make some request and handle them in server side with node JS. My other frontend proyects fetch data from this server.',
+      'This web server provide a REST API for my applications. The data is save on a MongoDB.',
     github: 'https://github.com/georgexx009/rest-server',
-  },
-  {
-    urlImg:
-      'https://res.cloudinary.com/dtwkxgaag/image/upload/v1593625748/projects/portfolio_fzsfcf.png',
-    title: 'Portfolio (this web page)',
-    summary:
-      'The purpose of this project is to show some of the things that i do on my free time and to keep showing what I’m learning in my journey as a Full Stack Developer.',
-    github: 'https://github.com/georgexx009/emmanuel-portfolio',
-    webPage: 'https://georgexx009.herokuapp.com',
   },
 ];
