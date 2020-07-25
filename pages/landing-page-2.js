@@ -1,13 +1,19 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../components/navbar';
-import AboutMe from '../components/aboutMe';
-import MySkills from '../components/mySkills';
-import AboutThisPage from '../components/aboutThisPage';
 import Footer from '../components/footer';
 import TypingEffect from '../components/TypingEffect';
+import { useState, useEffect } from 'react';
 
-export default function Home() {
+export default function landingPage2() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 2000);
+  }, []);
+
   return (
     <div className="global-container">
       <Head>
@@ -25,16 +31,37 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <div id="landing-page">
-          <p className="who-am-i">
+        <div id="landing-page-v2">
+          {/* <p className="who-am-i">
             Hello There!
             <br /> <br />
             I’m <b>Emmanuel</b>. I’m a mechatronic engineer by title and{' '}
             <b>Full Stack Developer</b> by working career.
-          </p>
-          <div className="logo-image">
+          </p> */}
+          {/* <div className="logo-image">
             <img src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595284773/logo_black_ttawt2.png" />
+          </div> */}
+          <div className="who-i-am">
+            <div className="wrapper">
+              <div
+                className={
+                  show
+                    ? 'none-border typing-demo length-one'
+                    : 'typing-demo length-one'
+                }
+              >
+                Hello There! I am Emmanuel
+              </div>
+            </div>
+            {show && (
+              <div className="wrapper">
+                <div className="typing-demo length-two">
+                  I am a Full Stack Developer
+                </div>
+              </div>
+            )}
           </div>
+
           <div className="links-section">
             <div className="links-container">
               <a href="#skills-section">My skills</a>
@@ -50,15 +77,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-        <AboutMe />
-        <MySkills />
-        <AboutThisPage />
-        <div className="background-image-container">
-          <img
-            className="background-image"
-            src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1593972690/logo_icon_tiluaj.png"
-          />
         </div>
       </main>
       <Footer />
