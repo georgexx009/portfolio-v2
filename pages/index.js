@@ -1,11 +1,14 @@
 import Head from 'next/head';
-import Link from 'next/link';
+
+//components
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+
+//sections
+import LandingPage from '../components/LandingPage';
 import AboutMe from '../components/aboutMe';
 import MySkills from '../components/mySkills';
 import AboutThisPage from '../components/aboutThisPage';
-import Footer from '../components/footer';
-import TypingEffect from '../components/TypingEffect';
 
 export default function Home() {
   return (
@@ -25,32 +28,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <div id="landing-page">
-          <p className="who-am-i">
-            Hello There!
-            <br /> <br />
-            I’m <b>Emmanuel</b>. I’m a mechatronic engineer by title and{' '}
-            <b>Full Stack Developer</b> by working career.
-          </p>
-          <div className="logo-image">
-            <img src="https://res.cloudinary.com/dtwkxgaag/image/upload/v1595284773/logo_black_ttawt2.png" />
-          </div>
-          <div className="links-section">
-            <div className="links-container">
-              <a href="#skills-section">My skills</a>
-              <a href="#about-me-section">About me</a>
-              <Link href="/projects">
-                <a
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Portfolio
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <LandingPage />
         <AboutMe />
         <MySkills />
         <AboutThisPage />

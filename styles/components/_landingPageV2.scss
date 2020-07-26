@@ -47,7 +47,7 @@
   .links-section {
     @extend %flex-column-center;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 0;
     right: 0;
     font-size: 0.8em;
@@ -84,9 +84,6 @@
 
 @media only screen and (min-width: 580px) {
   #landing-page-v2 {
-    // .logo-image {
-    //   width: 400px;
-    // }
     .links-section {
       font-size: 1em;
     }
@@ -99,21 +96,5 @@
       font-size: 2em;
       margin-top: 10%;
     }
-    // .logo-image {
-    //   width: 500px;
-    //   height: auto;
-    //   img {
-    //     width: 100%;
-    //   }
-    // }
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  #landing-page-v2 {
-    // .logo-image {
-    //   width: 600px;
-    //   right: 100px;
-    // }
   }
 }

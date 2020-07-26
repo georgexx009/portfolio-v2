@@ -1,16 +1,6 @@
+@import './components';
 @import './baseColors';
-@import '../styles/classes';
-@import '../components/navbar/navbar';
-@import './components/landingPage';
-@import './components/aboutMe';
-@import './components/mySkills';
-@import './components/aboutThisPage';
-@import './components/footer';
-@import './components/portfolio';
-@import './components/button';
-@import './components/projectCard';
-@import './components/yosae';
-@import './components/landingPageV2';
+@import './classes';
 
 * {
   margin: 0;
