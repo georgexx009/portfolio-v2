@@ -37,7 +37,7 @@ const skills = [
 
 export default function MySkills() {
   return (
-    <div className="my-skills-section" id="skills-section">
+    <section className="my-skills-section" id="skills-section">
       <p className="title-section">Skills</p>
       <hr className="break-line" />
       <div className="skills-container">
@@ -45,6 +45,6 @@ export default function MySkills() {
           <SkillCard title={skill.title} content={skill.content} key={i} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

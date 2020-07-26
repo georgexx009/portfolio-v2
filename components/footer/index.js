@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="main-footer">
+    <footer className="main-footer">
       <hr className="break-line" />
       <div className="footer-container">
         <p>Emmanuel Galindo</p>
@@ -16,6 +16,6 @@ export default function Footer() {
           ></i>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

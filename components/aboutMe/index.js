@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div id="about-me-section">
+    <section id="about-me-section">
       <p className="title-section">About me</p>
       <hr className="break-line" />
 
@@ -45,6 +45,6 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

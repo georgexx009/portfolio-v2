@@ -1,6 +1,6 @@
 export default function AboutThisPage() {
   return (
-    <div className="about-this-page-section">
+    <section className="about-this-page-section">
       <p className="title">About this page</p>
       <hr className="break-line" />
       <div className="text-container">
@@ -35,6 +35,6 @@ export default function AboutThisPage() {
           <b>I will never stop learning and practicing.</b>
         </p>
       </div>
-    </div>
+    </section>
   );
 }

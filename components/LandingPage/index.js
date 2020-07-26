@@ -11,7 +11,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div id="landing-page-v2">
+    <section id="landing-page-v2">
       <div className="who-i-am">
         <div className="wrapper">
           <div
@@ -48,7 +48,7 @@ const LandingPage = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
