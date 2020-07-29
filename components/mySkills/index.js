@@ -27,7 +27,7 @@ const skills = [
   },
   {
     title: 'Currently Learning',
-    content: 'GraphQL, Prisma',
+    content: 'GraphQL, Prisma, Next.js',
   },
   {
     title: 'Extra Tools',
