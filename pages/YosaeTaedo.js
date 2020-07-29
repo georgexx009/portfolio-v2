@@ -49,9 +49,13 @@ export default function Yosae() {
             found the best option for each part of the entire project.
           </p>
           <p>
-            I was in charge of the{' '}
+            As a product lead, I was in charge of{' '}
+            <b>ensuring that the product followed customer expectations</b> and
+            coordinating teams from electronics, software and mechanical design.
+            As an engineer I developed the modules for{' '}
             <b>
-              communication between the electronic devices and the application,
+              wireless communication between the electronic devices and the
+              application,
             </b>{' '}
             this involved the use of Python and JavaScript. Then I moved to
             application development, started{' '}
