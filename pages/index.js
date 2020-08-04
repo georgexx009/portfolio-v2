@@ -1,16 +1,19 @@
 import Head from 'next/head';
 
-//components
+// components
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
-//sections
+// sections
 import LandingPage from '../components/LandingPage';
 import AboutMe from '../components/aboutMe';
 import MySkills from '../components/mySkills';
 import AboutThisPage from '../components/aboutThisPage';
 
-export default function Home() {
+// markdown files content
+import getContent from '../lib/getContent';
+
+export default function Home({ aboutMeData }) {
   return (
     <div className="global-container">
       <Head>
@@ -29,7 +32,7 @@ export default function Home() {
       <Navbar />
       <main>
         <LandingPage />
-        <AboutMe />
+        <AboutMe aboutMeTxt={aboutMeData} />
         <MySkills />
         <AboutThisPage />
         <div className="background-image-container">
@@ -42,4 +45,14 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const aboutMeData = await getContent('aboutMe.md');
+  console.log(aboutMeData);
+  return {
+    props: {
+      aboutMeData: aboutMeData.contentHtml,
+    },
+  };
 }
