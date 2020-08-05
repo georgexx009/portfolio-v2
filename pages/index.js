@@ -13,7 +13,7 @@ import AboutThisPage from '../components/aboutThisPage';
 // markdown files content
 import getContent from '../lib/getContent';
 
-export default function Home({ aboutMeData }) {
+export default function Home({ aboutMeData, aboutThisPage }) {
   return (
     <div className="global-container">
       <Head>
@@ -32,9 +32,9 @@ export default function Home({ aboutMeData }) {
       <Navbar />
       <main>
         <LandingPage />
-        <AboutMe aboutMeTxt={aboutMeData} />
+        <AboutMe aboutMeData={aboutMeData} />
         <MySkills />
-        <AboutThisPage />
+        <AboutThisPage aboutThisPage={aboutThisPage} />
         <div className="background-image-container">
           <img
             className="background-image"
@@ -48,11 +48,13 @@ export default function Home({ aboutMeData }) {
 }
 
 export async function getStaticProps() {
-  const aboutMeData = await getContent('aboutMe1');
-  if (!aboutMeData) return { props: {} };
+  const aboutMeData = await getContent('aboutMe');
+  const aboutThisPage = await getContent('aboutThisPage');
+
   return {
     props: {
-      aboutMeData: aboutMeData.contentFormatHtml,
+      aboutMeData,
+      aboutThisPage,
     },
   };
 }

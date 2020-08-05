@@ -1,7 +1,11 @@
-export default function AboutMe({ aboutMeTxt = '' }) {
+export default function AboutMe({ aboutMeData }) {
+  const {
+    contentFormatHtml = 'default-text',
+    title = 'default title',
+  } = aboutMeData;
   return (
     <section id="about-me-section">
-      <p className="title-section">About me</p>
+      <p className="title-section">{title}</p>
       <hr className="break-line" />
 
       <div className="about-me-container">
@@ -18,7 +22,7 @@ export default function AboutMe({ aboutMeTxt = '' }) {
         <hr className="break-line" />
         <div
           className="about-me-text"
-          dangerouslySetInnerHTML={{ __html: aboutMeTxt }}
+          dangerouslySetInnerHTML={{ __html: contentFormatHtml }}
         />
       </div>
     </section>
