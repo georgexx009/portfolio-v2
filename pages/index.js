@@ -48,11 +48,11 @@ export default function Home({ aboutMeData }) {
 }
 
 export async function getStaticProps() {
-  const aboutMeData = await getContent('aboutMe.md');
-  console.log(aboutMeData);
+  const aboutMeData = await getContent('aboutMe1');
+  if (!aboutMeData) return { props: {} };
   return {
     props: {
-      aboutMeData: aboutMeData.contentHtml,
+      aboutMeData: aboutMeData.contentFormatHtml,
     },
   };
 }

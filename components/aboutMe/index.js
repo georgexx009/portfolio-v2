@@ -1,4 +1,4 @@
-export default function AboutMe({ aboutMeTxt }) {
+export default function AboutMe({ aboutMeTxt = '' }) {
   return (
     <section id="about-me-section">
       <p className="title-section">About me</p>
