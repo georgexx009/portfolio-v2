@@ -35,7 +35,16 @@ const LandingPage = () => {
 
       <div className="links-section">
         <div className="links-container">
-          <a href="#skills-section">My skills</a>
+          <a
+            href="#"
+            onClick={() =>
+              window.open(
+                'https://res.cloudinary.com/dtwkxgaag/image/upload/v1597082289/Emmanuel_Galindo_CV_goaij0.pdf'
+              )
+            }
+          >
+            My Resume
+          </a>
           <a href="#about-me-section">About me</a>
           <Link href="/projects">
             <a
