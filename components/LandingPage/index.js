@@ -39,7 +39,7 @@ const LandingPage = () => {
             href="#"
             onClick={() =>
               window.open(
-                'https://res.cloudinary.com/dtwkxgaag/image/upload/v1597082289/Emmanuel_Galindo_CV_goaij0.pdf'
+                'https://res.cloudinary.com/dtwkxgaag/image/upload/v1599764919/Emmanuel_Galindo_CV_pou0a7.pdf'
               )
             }
           >
